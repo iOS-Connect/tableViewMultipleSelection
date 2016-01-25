@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>multipleSelectino.xcscheme</key>
+		<key>multipleSelection.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>527DB06C1C55AB45009FCBD7</key>
+		<key>52A1E9BB1C5698A500FF055D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

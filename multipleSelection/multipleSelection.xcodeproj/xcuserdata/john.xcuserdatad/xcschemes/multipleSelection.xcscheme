@@ -15,7 +15,7 @@
             hideIssues = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "527DB06C1C55AB45009FCBD7"
+               BlueprintIdentifier = "52A1E9BB1C5698A500FF055D"
                BuildableName = "multipleSelection.app"
                BlueprintName = "multipleSelection"
                ReferencedContainer = "container:multipleSelection.xcodeproj">
@@ -33,7 +33,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "527DB06C1C55AB45009FCBD7"
+            BlueprintIdentifier = "52A1E9BB1C5698A500FF055D"
             BuildableName = "multipleSelection.app"
             BlueprintName = "multipleSelection"
             ReferencedContainer = "container:multipleSelection.xcodeproj">
@@ -56,7 +56,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "527DB06C1C55AB45009FCBD7"
+            BlueprintIdentifier = "52A1E9BB1C5698A500FF055D"
             BuildableName = "multipleSelection.app"
             BlueprintName = "multipleSelection"
             ReferencedContainer = "container:multipleSelection.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "527DB06C1C55AB45009FCBD7"
+            BlueprintIdentifier = "52A1E9BB1C5698A500FF055D"
             BuildableName = "multipleSelection.app"
             BlueprintName = "multipleSelection"
             ReferencedContainer = "container:multipleSelection.xcodeproj">

@@ -2,14 +2,14 @@
 //  ViewController.swift
 //  multipleSelection
 //
-//  Created by John Regner on 1/24/16.
+//  Created by John Regner on 1/25/16.
 //  Copyright © 2016 John Regner. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController,
-	UITableViewDelegate, UITableViewDataSource {
+UITableViewDelegate, UITableViewDataSource {
 
 	@IBOutlet weak var tableView: UITableView!
 
@@ -22,22 +22,23 @@ class ViewController: UIViewController,
 
 	func tableView(tableView: UITableView,
 		numberOfRowsInSection section: Int) -> Int {
-		return data.count
+			return data.count
 	}
 
 	func tableView(tableView: UITableView,
 		cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-		let cell = tableView.dequeueReusableCellWithIdentifier("Cell",
-			forIndexPath: indexPath)
-		cell.textLabel?.text = data[indexPath.row]
-		return cell
+			let cell = tableView.dequeueReusableCellWithIdentifier("Cell",
+				forIndexPath: indexPath)
+			cell.textLabel?.text = data[indexPath.row]
+			return cell
 	}
 
 	func tableView(tableView: UITableView,
 		editingStyleForRowAtIndexPath indexPath: NSIndexPath)
 		-> UITableViewCellEditingStyle {
 
-		return UITableViewCellEditingStyle.init(rawValue: 3)!
+			return UITableViewCellEditingStyle.init(rawValue: 3)!
 	}
 }
+
