@@ -12,3 +12,4 @@ func tableView(tableView: UITableView,
 			return UITableViewCellEditingStyle.init(rawValue: 3)!
 	}
 ```
+![screenshot](screenshot.png)
