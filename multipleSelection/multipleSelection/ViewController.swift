@@ -8,24 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController,
-UITableViewDelegate, UITableViewDataSource {
+class ViewController: UITableViewController {
 
-	@IBOutlet weak var tableView: UITableView!
+//	@IBOutlet weak var tableView: UITableView!
 
 	var data  = (1...100).map { String($0) }
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		tableView.setEditing(true, animated: false)
+	@IBAction func toggleEditing(sender: AnyObject) {
+		let isEditing = tableView.editing
+		tableView.setEditing(!isEditing, animated: true)
 	}
 
-	func tableView(tableView: UITableView,
+	// MARK: - Table View Data Source Methods
+	override func tableView(tableView: UITableView,
 		numberOfRowsInSection section: Int) -> Int {
 			return data.count
 	}
 
-	func tableView(tableView: UITableView,
+	override func tableView(tableView: UITableView,
 		cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
 			let cell = tableView.dequeueReusableCellWithIdentifier("Cell",
@@ -33,12 +33,4 @@ UITableViewDelegate, UITableViewDataSource {
 			cell.textLabel?.text = data[indexPath.row]
 			return cell
 	}
-
-	func tableView(tableView: UITableView,
-		editingStyleForRowAtIndexPath indexPath: NSIndexPath)
-		-> UITableViewCellEditingStyle {
-
-			return UITableViewCellEditingStyle.init(rawValue: 3)!
-	}
 }
-
