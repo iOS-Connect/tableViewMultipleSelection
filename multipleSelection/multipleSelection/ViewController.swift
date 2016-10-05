@@ -10,8 +10,6 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-//	@IBOutlet weak var tableView: UITableView!
-
 	var data  = (1...100).map { String($0) }
 
 	@IBAction func toggleEditing(_ sender: AnyObject) {
@@ -30,7 +28,7 @@ class ViewController: UITableViewController {
 
 			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
 				for: indexPath)
-			cell.textLabel?.text = data[(indexPath as NSIndexPath).row]
+			cell.textLabel?.text = data[indexPath.row]
 			return cell
 	}
 }
