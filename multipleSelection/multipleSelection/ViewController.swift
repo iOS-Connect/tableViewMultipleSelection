@@ -10,26 +10,24 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-//	@IBOutlet weak var tableView: UITableView!
-
 	var data  = (1...100).map { String($0) }
 
-	@IBAction func toggleEditing(sender: AnyObject) {
-		let isEditing = tableView.editing
+	@IBAction func toggleEditing(_ sender: AnyObject) {
+		let isEditing = tableView.isEditing
 		tableView.setEditing(!isEditing, animated: true)
 	}
 
 	// MARK: - Table View Data Source Methods
-	override func tableView(tableView: UITableView,
+	override func tableView(_ tableView: UITableView,
 		numberOfRowsInSection section: Int) -> Int {
 			return data.count
 	}
 
-	override func tableView(tableView: UITableView,
-		cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+	override func tableView(_ tableView: UITableView,
+		cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-			let cell = tableView.dequeueReusableCellWithIdentifier("Cell",
-				forIndexPath: indexPath)
+			let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
+				for: indexPath)
 			cell.textLabel?.text = data[indexPath.row]
 			return cell
 	}
